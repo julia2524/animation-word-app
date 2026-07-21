@@ -1,14 +1,44 @@
-const problems = [
+const quizzes = [
   {
-    icon: "beer",
-    answer: "맥주",
+    word: "사과",
+    answer: "apple",
+    choices: {
+      topLeft: "butterfly",
+      topRight: "dog",
+      bottomLeft: "apple",
+      bottomRight: "umbrella",
+    },
   },
   {
-    icon: "pizza",
-    answer: "피자",
+    word: "강아지",
+    answer: "dog",
+    choices: {
+      topLeft: "dog",
+      topRight: "cat",
+      bottomLeft: "car",
+      bottomRight: "fish",
+    },
   },
   {
-    icon: "car",
-    answer: "자동차",
+    word: "나비",
+    answer: "butterfly",
+    choices: {
+      topLeft: "star",
+      topRight: "butterfly",
+      bottomLeft: "tree",
+      bottomRight: "flower",
+    },
   },
-];
+  {
+    word: "우산",
+    answer: "umbrella",
+    choices: {
+      topLeft: "umbrella",
+      topRight: "cloud",
+      bottomLeft: "water",
+      bottomRight: "weather-sunny",
+    },
+  },
+] as const;
+
+export default quizzes;
